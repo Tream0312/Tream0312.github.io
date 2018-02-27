@@ -1,0 +1,322 @@
+.m-pts {
+  width: 1226px;
+  height: 450px;
+  background: #F5F5F5;
+  margin: auto;
+  position: relative;
+  top: 0px;
+}
+.m-pts .title {
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: #333;
+  position: absolute;
+  top: 40px;
+}
+.m-pts .u-pts-content {
+  width: 1226px;
+  height: 420px;
+  position: absolute;
+  top: 80px;
+}
+.m-pts .u-pts-content .pts-content-list {
+  width: 1226px;
+  height: 421px;
+}
+.m-pts .u-pts-content .pts-content-list #book,
+.m-pts .u-pts-content .pts-content-list #main,
+.m-pts .u-pts-content .pts-content-list #games,
+.m-pts .u-pts-content .pts-content-list #app {
+  width: 296px;
+  float: left ;
+  background: #fff;
+  height: 420px;
+  margin-right: 14px;
+  /**图书头部**/
+}
+.m-pts .u-pts-content .pts-content-list #book .book-top,
+.m-pts .u-pts-content .pts-content-list #main .book-top,
+.m-pts .u-pts-content .pts-content-list #games .book-top,
+.m-pts .u-pts-content .pts-content-list #app .book-top,
+.m-pts .u-pts-content .pts-content-list #book .main-top,
+.m-pts .u-pts-content .pts-content-list #main .main-top,
+.m-pts .u-pts-content .pts-content-list #games .main-top,
+.m-pts .u-pts-content .pts-content-list #app .main-top,
+.m-pts .u-pts-content .pts-content-list #book .games-top,
+.m-pts .u-pts-content .pts-content-list #main .games-top,
+.m-pts .u-pts-content .pts-content-list #games .games-top,
+.m-pts .u-pts-content .pts-content-list #app .games-top,
+.m-pts .u-pts-content .pts-content-list #book .app-top,
+.m-pts .u-pts-content .pts-content-list #main .app-top,
+.m-pts .u-pts-content .pts-content-list #games .app-top,
+.m-pts .u-pts-content .pts-content-list #app .app-top {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  padding-top: 50px ;
+}
+.m-pts .u-pts-content .pts-content-list #book .book-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #main .book-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #games .book-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #app .book-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #book .main-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #main .main-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #games .main-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #app .main-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #book .games-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #main .games-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #games .games-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #app .games-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #book .app-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #main .app-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #games .app-top .pts-title,
+.m-pts .u-pts-content .pts-content-list #app .app-top .pts-title {
+  font-size: 16px;
+  color: #ffac13;
+  width: 296px;
+  height: 16px;
+  line-height: 16px;
+  margin-bottom: 20px;
+}
+.m-pts .u-pts-content .pts-content-list #book .book-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #main .book-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #games .book-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #app .book-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #book .main-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #main .main-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #games .main-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #app .main-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #book .games-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #main .games-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #games .games-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #app .games-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #book .app-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #main .app-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #games .app-top .pts-name,
+.m-pts .u-pts-content .pts-content-list #app .app-top .pts-name {
+  font-size: 20px;
+  font-weight: 400;
+}
+.m-pts .u-pts-content .pts-content-list #book .book-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #main .book-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #games .book-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #app .book-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #book .main-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #main .main-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #games .main-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #app .main-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #book .games-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #main .games-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #games .games-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #app .games-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #book .app-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #main .app-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #games .app-top .pts-name a:hover,
+.m-pts .u-pts-content .pts-content-list #app .app-top .pts-name a:hover {
+  color: #333;
+}
+.m-pts .u-pts-content .pts-content-list #book .book-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #main .book-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #games .book-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #app .book-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #book .main-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #main .main-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #games .main-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #app .main-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #book .games-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #main .games-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #games .games-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #app .games-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #book .app-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #main .app-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #games .app-top .pts-content,
+.m-pts .u-pts-content .pts-content-list #app .app-top .pts-content {
+  width: 200px ;
+  margin: auto;
+  margin-top: 2px ;
+  margin-bottom: 15px;
+  font-size: 12px ;
+}
+.m-pts .u-pts-content .pts-content-list #book .book-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #main .book-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #games .book-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #app .book-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #book .main-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #main .main-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #games .main-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #app .main-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #book .games-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #main .games-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #games .games-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #app .games-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #book .app-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #main .app-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #games .app-top .pts-content a,
+.m-pts .u-pts-content .pts-content-list #app .app-top .pts-content a {
+  color: #B0B0B0;
+}
+.m-pts .u-pts-content .pts-content-list #book .book-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #main .book-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #games .book-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #app .book-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #book .main-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #main .main-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #games .main-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #app .main-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #book .games-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #main .games-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #games .games-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #app .games-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #book .app-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #main .app-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #games .app-top .pts-content a:hover,
+.m-pts .u-pts-content .pts-content-list #app .app-top .pts-content a:hover {
+  color: #B0B0B0;
+}
+.m-pts .u-pts-content .pts-content-list #book,
+.m-pts .u-pts-content .pts-content-list #main,
+.m-pts .u-pts-content .pts-content-list #games,
+.m-pts .u-pts-content .pts-content-list #app {
+  border-top: 1px solid #ffac13;
+  position: relative;
+  transition: .2s;
+  /**图书图片**/
+}
+.m-pts .u-pts-content .pts-content-list #book .pts-img,
+.m-pts .u-pts-content .pts-content-list #main .pts-img,
+.m-pts .u-pts-content .pts-content-list #games .pts-img,
+.m-pts .u-pts-content .pts-content-list #app .pts-img {
+  width: 216px;
+  height: 154px;
+  margin: auto;
+}
+.m-pts .u-pts-content .pts-content-list #book .pts-img a,
+.m-pts .u-pts-content .pts-content-list #main .pts-img a,
+.m-pts .u-pts-content .pts-content-list #games .pts-img a,
+.m-pts .u-pts-content .pts-content-list #app .pts-img a {
+  display: block;
+  width: 216px;
+  height: 154px;
+}
+.m-pts .u-pts-content .pts-content-list #book .pts-img img,
+.m-pts .u-pts-content .pts-content-list #main .pts-img img,
+.m-pts .u-pts-content .pts-content-list #games .pts-img img,
+.m-pts .u-pts-content .pts-content-list #app .pts-img img {
+  display: block;
+  width: 216px;
+  height: 154px;
+}
+.m-pts .u-pts-content .pts-content-list #book .list-more,
+.m-pts .u-pts-content .pts-content-list #main .list-more,
+.m-pts .u-pts-content .pts-content-list #games .list-more,
+.m-pts .u-pts-content .pts-content-list #app .list-more {
+  width: 116px;
+  height: 20px;
+  display: flex;
+  margin: 25px auto;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.m-pts .u-pts-content .pts-content-list #book .list-more li,
+.m-pts .u-pts-content .pts-content-list #main .list-more li,
+.m-pts .u-pts-content .pts-content-list #games .list-more li,
+.m-pts .u-pts-content .pts-content-list #app .list-more li {
+  width: 10px;
+  height: 10px;
+  float: left;
+  width: 6px;
+  height: 6px;
+  background: #B0B0B0;
+  border-radius: 50%;
+}
+.m-pts .u-pts-content .pts-content-list #book .list-more li span,
+.m-pts .u-pts-content .pts-content-list #main .list-more li span,
+.m-pts .u-pts-content .pts-content-list #games .list-more li span,
+.m-pts .u-pts-content .pts-content-list #app .list-more li span {
+  display: block;
+}
+.m-pts .u-pts-content .pts-content-list #book .list-more .more-one,
+.m-pts .u-pts-content .pts-content-list #main .list-more .more-one,
+.m-pts .u-pts-content .pts-content-list #games .list-more .more-one,
+.m-pts .u-pts-content .pts-content-list #app .list-more .more-one {
+  width: 6px;
+  height: 6px;
+  border: 2px solid #FF6700;
+  border-radius: 50%;
+  background: transparent;
+}
+.m-pts .u-pts-content .pts-content-list #book .list-more .more-one span,
+.m-pts .u-pts-content .pts-content-list #main .list-more .more-one span,
+.m-pts .u-pts-content .pts-content-list #games .list-more .more-one span,
+.m-pts .u-pts-content .pts-content-list #app .list-more .more-one span {
+  display: block;
+}
+.m-pts .u-pts-content .pts-content-list #book .box-lr,
+.m-pts .u-pts-content .pts-content-list #main .box-lr,
+.m-pts .u-pts-content .pts-content-list #games .box-lr,
+.m-pts .u-pts-content .pts-content-list #app .box-lr {
+  width: 296px;
+  height: 50px;
+  position: absolute;
+  top: 220px;
+  display: none;
+  transition: .2s;
+}
+.m-pts .u-pts-content .pts-content-list #book .box-lr .box-l,
+.m-pts .u-pts-content .pts-content-list #main .box-lr .box-l,
+.m-pts .u-pts-content .pts-content-list #games .box-lr .box-l,
+.m-pts .u-pts-content .pts-content-list #app .box-lr .box-l {
+  float: left;
+  font-size: 22px;
+  color: #fff;
+  height: 50px;
+  background: #E0E0E0;
+}
+.m-pts .u-pts-content .pts-content-list #book .box-lr .box-l i,
+.m-pts .u-pts-content .pts-content-list #main .box-lr .box-l i,
+.m-pts .u-pts-content .pts-content-list #games .box-lr .box-l i,
+.m-pts .u-pts-content .pts-content-list #app .box-lr .box-l i {
+  line-height: 50px;
+}
+.m-pts .u-pts-content .pts-content-list #book .box-lr .box-r,
+.m-pts .u-pts-content .pts-content-list #main .box-lr .box-r,
+.m-pts .u-pts-content .pts-content-list #games .box-lr .box-r,
+.m-pts .u-pts-content .pts-content-list #app .box-lr .box-r {
+  float: right;
+  font-size: 22px;
+  color: #fff;
+  height: 50px;
+  background: #E0E0E0;
+}
+.m-pts .u-pts-content .pts-content-list #book .box-lr .box-r i,
+.m-pts .u-pts-content .pts-content-list #main .box-lr .box-r i,
+.m-pts .u-pts-content .pts-content-list #games .box-lr .box-r i,
+.m-pts .u-pts-content .pts-content-list #app .box-lr .box-r i {
+  line-height: 50px;
+}
+.m-pts .u-pts-content .pts-content-list #book:hover,
+.m-pts .u-pts-content .pts-content-list #main:hover,
+.m-pts .u-pts-content .pts-content-list #games:hover,
+.m-pts .u-pts-content .pts-content-list #app:hover {
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.18);
+  transform: translateY(-2px);
+}
+.m-pts .u-pts-content .pts-content-list #book:hover .box-lr,
+.m-pts .u-pts-content .pts-content-list #main:hover .box-lr,
+.m-pts .u-pts-content .pts-content-list #games:hover .box-lr,
+.m-pts .u-pts-content .pts-content-list #app:hover .box-lr {
+  display: block;
+}
+.m-pts .u-pts-content .pts-content-list #main {
+  border-top: 1px solid #83c44e;
+}
+.m-pts .u-pts-content .pts-content-list #games {
+  border-top: 1px solid #e53935;
+}
+.m-pts .u-pts-content .pts-content-list #app {
+  border-top: 1px solid #2196f3;
+  margin-right: 0;
+}

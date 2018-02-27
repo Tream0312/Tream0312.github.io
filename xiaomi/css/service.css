@@ -1,0 +1,88 @@
+.m-service {
+  width: 1226px;
+  padding: 27px 0;
+  background: #fff;
+  margin: 0 auto;
+}
+.m-service {
+  /**服务头部**/
+  /**服务下部**/
+}
+.m-service .u-service-top {
+  width: 100%;
+  display: inline-block;
+  line-height: 25px;
+}
+.m-service .u-service-top li {
+  width: 19.8%;
+  height: 25px;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #E0E0E0;
+}
+.m-service .u-service-top li .service-a {
+  font-size: 16px;
+  color: #616161;
+}
+.m-service .u-service-top li .service-a .iconfont {
+  font-size: 24px;
+  vertical-align: middle;
+}
+.m-service .u-service-top li:hover .service-a {
+  color: #FF6700;
+}
+.m-service .u-service-top li:last-child {
+  border-right: none;
+}
+.m-service .u-service-bottom {
+  margin-top: 20px;
+  padding-top: 30px;
+  border-top: 1px solid #E0E0E0;
+  height: 150px;
+}
+.m-service .u-service-bottom .service-link {
+  float: left;
+  width: 160px;
+  height: 112px;
+  font-size: 12px;
+}
+.m-service .u-service-bottom .service-link dt {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 25px;
+}
+.m-service .u-service-bottom .service-link dd {
+  color: #757575;
+  margin-bottom: 10px;
+}
+.m-service .u-service-bottom .service-link dd a {
+  display: block;
+}
+.m-service .u-service-bottom .service-link dd a:hover {
+  color: #FF6700;
+}
+.m-service .u-service-bottom .service-right {
+  width: 251px;
+  height: 112px;
+  float: right;
+  border-left: 1px solid #E0E0E0;
+  text-align: center;
+}
+.m-service .u-service-bottom .service-right .phone {
+  font-size: 22px;
+  color: #FF6700;
+}
+.m-service .u-service-bottom .service-right p:nth-of-type(2) {
+  font-size: 12px;
+  margin: 0 0 16px;
+}
+.m-service .u-service-bottom .service-right .zx {
+  padding: 6px 9px;
+  border: 1px solid #FF6700;
+  color: #FF6700;
+  transition: .2s;
+}
+.m-service .u-service-bottom .service-right .zx:hover {
+  background: #FF6700;
+  color: #fff;
+}

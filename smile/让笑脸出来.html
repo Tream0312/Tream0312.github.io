@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			#smile{
+				width: 150px;
+				height: 190px;
+				position: relative;
+			}
+			#smile img{
+				width: 150px;
+				height: 170px;
+				position: absolute;
+			}
+			#smile #tit{
+				display: inline-block;
+				width: 100%;
+				height: 20px;
+				position: absolute;
+				bottom: 0;
+				left:0;
+				text-align: center;
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="smile">
+			<img src="hq.jpg"/>
+			<span id="tit">期待</span>
+		</div>
+	</body>
+	<script>
+		
+		window.onload=function(){
+			var times = new Date();
+			var hournow = times.getHours();
+			var k=0;var leaderx=0; var targetx=0;
+				var targety=0;var leadery=0;
+				var smile = document.getElementsByTagName("img")[0].parentNode;
+				smile.style.cursor = "pointer";
+			if(hournow<11){
+				alert("上午好！！！我是你的小可爱，Smile.");
+			}
+			else if(13>hournow>=11){
+				alert("中午好！！！我是你的小可爱，Smile.")
+			}
+			else if(hournow<18){
+				alert("下午好！！！我是你的小可爱，Smile.")
+			}
+			else{
+				alert("晚上好！！！我是你的小可爱，Smile.")
+			}
+			
+						
+			//获取图片元素
+			
+			smile.onmouseover = function(){
+				var youName = prompt("你叫什么名字啊？");
+				if(youName=="bob"){
+					alert(youName+",这几天你跑哪里去了，现在才来看我。");									
+					}	
+				else{
+					alert(youName+"，不认识你，你从哪里跑过来的");
+					smile.children[0].src = "rc.jpg";
+					smile.children[1].innerHTML ="坏笑";
+					smile.children[1].style.color = "red";
+					return;
+				}
+				
+				smile.onclick= function(){
+//						 	var youName = prompt("你叫什么名字啊？");
+//						 	if(youName=="王兴"){
+						 		//alert(youName+"，你这个SB，现在才来看我。");
+								
+//						}
+//						 	else{
+//							alert(youName+"，不认识你，你个哪里跑过来的");
+//							}
+					
+					
+					//图片移动
+					
+					//改变图片
+					function change(){
+						k++;
+						//alert("你点哪里，我就跟到哪里！");
+						if(k==1){
+							smile.children[0].src = "rc.jpg";
+							smile.children[1].innerHTML ="坏笑";
+							smile.children[1].style.color = "red";
+						}
+						else if(k==2){
+							smile.children[0].src = "tp.jpg";
+							smile.children[1].innerHTML ="调皮";
+							smile.children[1].style.color = "green";
+						}
+						else if(k==3){
+							smile.children[0].src = "wx.jpg";
+							smile.children[1].innerHTML ="微笑";
+							smile.children[1].style.color = "pink";
+						}
+						else{
+							smile.children[0].src = "hq.jpg";
+							smile.children[1].innerHTML ="坏笑";
+							smile.children[1].style.color = "red";
+							k=0;
+						}
+					}
+					change();
+					
+//						
+					}
+				
+				//当鼠标移开图片时
+				smile.onmouseleave = function(){
+				smile.onmouseover=null;
+				document.onclick = function(event){
+					var event = event||window.event;
+					 targetx =event.clientX-smile.offsetWidth/2;
+						 targety =event.clientY-smile.offsetHeight/2;
+						console.log(targetx);
+						console.log(targety);
+					
+					}
+				
+				
+			}
+			setInterval(function(){
+						
+						leaderx = leaderx+(targetx-leaderx)/50;
+						console.log(leaderx);
+						leadery = leadery+(targety-leadery)/50;
+						smile.style.left =leaderx+"px";
+						smile.style.top =leadery+"px";
+					},10);
+				}
+				
+					
+						
+		}
+	
+	</script>
+</html>

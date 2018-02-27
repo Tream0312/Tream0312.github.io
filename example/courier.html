@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 360px;
+				height: auto;
+				margin:20px auto;
+			}
+			.box input{
+				width: 200px;
+				height: 22px;
+				margin-left: 15px;				
+			}
+			.box button{
+				background: blue;
+				display: inline-block;
+				width: 60px;
+				height: 20px;
+			}
+			.box #info{
+				width:100%;
+				height: auto;
+				background: #ccc;
+				margin-top: 5px;
+				border: 1px solid #c0c0c0;
+				list-style: none;				
+			}
+			.box #info li{	
+				width:95%;
+				height: auto;
+				margin: auto;
+				background: #fff;				
+				border-bottom: 1px solid rgb(213,12,23);
+				padding: 5px 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			快递单号<input type="text" placeholder="请输入你的快递单号" name="txt" id="txt">
+			<button id="btn">查询</button>
+			<ul id="info">
+				
+			</ul>
+		</div>
+		<script>
+			window.onload=function(){
+				//获取按钮
+				var btn=document.getElementById("btn");
+				//点击按钮后
+				btn.onclick=function(){
+					//获取用户输入的定单号
+					var txt=document.getElementById("txt").value;
+					//创建一个AJAX对象
+					//一个处理兼容封闭函数
+					function getXmlHttp(){
+						if(window.XMLHttpRequest){
+							return new XMLHttpRequest();
+						}
+						else{
+							return new ActiveXObject("microsoft.XMLHTTP")
+						}
+					}
+					//调用函数创建对象
+					var xml=getXmlHttp();
+					//打开对象
+					xml.open("get","../example/courier.php?txt="+txt,true);
+					//发送对象
+					xml.send(null);
+					//回调请求的结果
+					xml.onreadystatechange=function(){
+						if(xml.readyState==4&&xml.status==200){
+							//console.log(xml.responseText);
+							//将字符串转换成JSON
+							var obj =JSON.parse(xml.responseText);
+							var gt="";
+							//当用户输入正确定单时
+							if(txt=="3864890008194"){
+								//找到相关物流信息
+							//var info=obj.data.info.context[0].desc;
+							//console.log(obj.data.info.context.length);
+							
+							for(var i=0;i<obj.data.info.context.length;i++){
+								var info=obj.data.info.context[i].desc;
+								//console.log(info);
+							  gt+="<li>"+info+"</li>";
+							}
+							//console.log(gt);
+							document.getElementById("info").innerHTML=gt;
+							}
+							else{
+								document.getElementById("info").innerHTML="<li>"+obj.msg+"</li>";
+							}
+							
+						}
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

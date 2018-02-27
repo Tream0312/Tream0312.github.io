@@ -1,0 +1,104 @@
+.m-activity {
+  width: 1226px;
+  height: 170px;
+  background: #fff;
+  margin: auto;
+  margin-top: 15px;
+}
+.m-activity .u-activity-l {
+  width: 234px;
+  float: left;
+}
+.m-activity .u-activity-l .activity-l-list {
+  height: 170px;
+  background: #5f5750;
+  text-align: center;
+  padding: 0 3px;
+}
+.m-activity .u-activity-l .activity-l-list .list2:after,
+.m-activity .u-activity-l .activity-l-list .list3:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 70px;
+  background: #665e57;
+  top: 6px;
+  left: 0px;
+}
+.m-activity .u-activity-l .activity-l-list .list4:before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 1px;
+  background: #665E57;
+  top: 0px;
+  left: 6px;
+}
+.m-activity .u-activity-l .activity-l-list .list5:before,
+.m-activity .u-activity-l .activity-l-list .list6:before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 1px;
+  background: #665E57;
+  top: 0px;
+  left: 6px;
+}
+.m-activity .u-activity-l .activity-l-list .list5:after,
+.m-activity .u-activity-l .activity-l-list .list6:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 70px;
+  background: #665E57;
+  top: 6px;
+  left: 0px;
+}
+.m-activity .u-activity-l .activity-l-list li {
+  float: left;
+  width: 70px;
+  height: 82px;
+  padding: 0 3px;
+  position: relative;
+}
+.m-activity .u-activity-l .activity-l-list li a {
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 64px;
+  top: 20px;
+  left: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  transition: color .2;
+}
+.m-activity .u-activity-l .activity-l-list li a i {
+  display: block;
+  line-height: 24px;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.m-activity .u-activity-l .activity-l-list li a:hover {
+  color: #fff;
+}
+.m-activity .u-activity-r {
+  float: left;
+  width: 992px;
+}
+.m-activity .u-activity-r a:nth-of-type(1) {
+  margin: 0px 15px;
+}
+.m-activity .u-activity-r a:nth-of-type(2) {
+  float: right;
+}
+.m-activity .u-activity-r a {
+  width: 316px;
+  float: left;
+  height: 170px;
+}
+.m-activity .u-activity-r a img {
+  display: block
+               width: 316px;
+  height: 170px;
+}

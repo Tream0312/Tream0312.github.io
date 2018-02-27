@@ -1,0 +1,94 @@
+#client {
+  width: 100%;
+  height: 445px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 5px 5px rgba(123, 123, 123, 0.3);
+}
+#client h2 {
+  font-size: 24px;
+  color: #000080;
+  padding: 20px 0;
+  padding-bottom: 30px;
+}
+#client .client-box {
+  width: 1080px;
+  height: 364px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+#client .client-box .client-list {
+  width: 1000%;
+  height: 250px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#client .client-box .client-p1 {
+  width: 10%;
+  height: 364px;
+  float: left;
+}
+#client .client-box .client-p1 img {
+  float: left;
+  border: 1px solid #DCDCDC;
+}
+#client .client-box .client-p1 h3 {
+  float: left;
+  height: 50px;
+  width: 60%;
+  line-height: 50px;
+  color: #008000;
+}
+#client .client-box .client-p1 .fgj {
+  width: 62%;
+  height: 90px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-left: 20px ;
+}
+#client .client-box .client-p1 a {
+  display: inline-block;
+  height: 30px;
+  width: 10%;
+  float: left;
+  color: green;
+  margin-left: 25%;
+  background-image: url(../YAIMGS/bg23.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#client .star-box {
+  width: 1080px;
+  height: 81px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  bottom: 5px;
+}
+#client .star-box .star-client {
+  width: 1000%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+#client .star-box .star-client li {
+  float: left;
+  margin-left: 43px;
+  border: 1px solid rgba(123, 123, 123, 0.4);
+}
+#client .star-box .star-client .bag {
+  border-color: red;
+}
+#client .star-box .star-client li:first-child {
+  margin-left: 0;
+}

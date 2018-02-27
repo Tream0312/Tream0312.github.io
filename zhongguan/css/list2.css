@@ -1,0 +1,53 @@
+.list2{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	position: relative;
+	top:-6px;
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+.list2 ul{
+	width:100%;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.list2 ul li{
+	float: left;
+	width:50px;
+	margin-left: 2px;
+}
+.list2 ul li a{
+	width: 50px;
+	height: 70px;
+	text-align: center;
+}
+.list2 ul li a:before{
+	content: "";
+	display:block;
+	width: 45px;
+	height: 45px;
+	background:url(../img/list.jpg) no-repeat;
+	border-radius: 50%;
+	background-size: cover;
+	margin-bottom: 10px;
+}
+ ul li:nth-child(1) a:before{
+	background-position: 0px 0px;
+}
+ ul li:nth-child(2) a:before{
+	background-position: -154px 0px;
+}
+ul li:nth-child(3) a:before{
+	background-position: -308px 0px;
+}
+ ul li:nth-child(4) a:before{
+	background-position: -77px 0px;
+}
+ ul li:nth-child(5) a:before{
+	background-position: -232px 0px;
+}
+

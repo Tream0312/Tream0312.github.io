@@ -1,0 +1,100 @@
+.pag-content{
+	background: #fff;
+	position: relative;
+	top: -6px;
+	
+}
+.pag-content ul li{
+	padding: 10px 0;
+	margin: 0 10px;
+	border-bottom: 1px solid #E9E9E9;
+	position: relative;
+}
+.pag-content ul li a{
+	display: block;
+	overflow: hidden;
+}
+
+/**new-vertail**/
+.pag-content ul .ver figure{
+	width:34%;
+	margin-right: 0%;
+	max-height: 155px;
+	float: right;
+}
+.pag-content ul .ver figure img{
+	float: right;
+	width: 89%;
+}
+
+.pag-content ul .ver div{
+	width: 68%;
+
+}
+.pag-content ul .ver div h3{
+	font-size: 15px;
+	color: #808080;
+	font-weight: 600;
+	line-height: 20px;
+	white-space:pre-wrap;
+}
+.pag-content ul .ver div p{
+	font-size: 12px;
+	color: #A9A9A9;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+}
+.pag-content ul .ver div span:first-child:before{
+	content: "评论5";
+	margin-right:10px ;
+}
+
+/**new-cross**/
+.pag-content ul .cross .c-f-img1{
+	width: 32%;
+	margin-bottom: 10px;
+	float: left;
+	margin-bottom:10px;
+	margin-right:2%;
+	
+}
+.pag-content ul .cross .c-f-img2{
+	width: 32%;
+	margin-bottom: 10px;
+	float: left;
+	margin-bottom:10px;
+	margin-right:2%;
+	
+}
+.pag-content ul .cross .c-f-img3{
+	width: 32%;
+	float: left;
+	margin-bottom:10px;
+	margin-left:0px;
+	
+}
+.pag-content ul .cross figure img{
+	width:100%;
+	margin-left: 1px;
+	
+}
+.pag-content ul .cross figure img:first-child{
+	margin-left: 0px;
+}
+.pag-content ul .cross a div h3{
+	font-size: 16px;
+	line-height: 1.5em;
+	margin-bottom: 5px;
+}
+.pag-content ul .cross a div p{
+	font-size: 12px;
+	color: #A9A9A9;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+}
+.pag-content ul .cross div p span:first-child:before{
+	content: "评论30";
+	margin-right: 10px;
+}

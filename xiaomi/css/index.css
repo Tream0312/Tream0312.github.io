@@ -1,0 +1,27 @@
+/**公共部分**/
+@import url("base.css");
+/**header部分**/
+@import url("g-hd.css");
+@import url("loginer-top.css");
+/**内容部分**/
+@import url("g-content.css");
+@import url("content-nav.css");
+@import url("product.css");
+@import url("activity.css");
+@import url("star-product.css");
+@import url("home-appliance.css");
+@import url("smart.css");
+@import url("collocation.css");
+@import url("accessories.css");
+@import url("surrounding.css");
+@import url("recommend.css");
+@import url("hot-product.css");
+@import url("pts.css");
+@import url("videos.css");
+
+/**footer部分**/
+@import url("g-ft.css");
+@import url("service.css");
+@import url("about.css");
+@import url("link.css");
+@import url("fxxm.css");

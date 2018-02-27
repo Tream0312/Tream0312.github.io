@@ -1,0 +1,60 @@
+.m-link {
+  width: 100%;
+  height: 90px;
+  background: #FAFAFA;
+  position: relative;
+  top: 0px;
+}
+.m-link .u-link {
+  width: 1226px;
+  height: 100px;
+  margin: 0px auto ;
+}
+.m-link .u-link .ft-logo {
+  height: 57px;
+  float: left;
+  background: url(../img/logo-footer.png);
+  width: 57px ;
+  margin-right: 10px;
+}
+.m-link .u-link .ft-link {
+  height: 57px;
+  width: 65%;
+  float: left;
+}
+.m-link .u-link .ft-link .ft-link-top {
+  font-size: 12px;
+}
+.m-link .u-link .ft-link .ft-link-top a {
+  color: #757575;
+}
+.m-link .u-link .ft-link .ft-link-top a:hover {
+  color: #FF6700;
+}
+.m-link .u-link .ft-link .ft-link-top span {
+  color: #B0B0B0;
+}
+.m-link .u-link .ft-link .ft-link-bottom {
+  font-size: 12px;
+  color: #B0B0B0;
+}
+.m-link .u-link .ft-link .ft-link-bottom a {
+  color: #B0B0B0;
+}
+.m-link .u-link .ft-link .ft-link-bottom a:hover {
+  color: #FF6700;
+}
+.m-link .u-link .more-gs {
+  float: right;
+  width: 28%;
+  height: 28px;
+}
+.m-link .u-link .more-gs a {
+  float: left;
+  height: 28px;
+  width: 85px;
+}
+.m-link .u-link .more-gs a img {
+  height: 28px;
+  width: 85px;
+}

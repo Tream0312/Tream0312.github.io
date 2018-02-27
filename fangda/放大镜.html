@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#box{
+				width: 400px;
+				height: 400px;
+			}
+			#box img{
+				width: 400px;
+				height: 400px;
+				
+			}
+			#box #zz{
+				position: absolute;	
+				left: 0;
+				top: 0;	
+				width: 200px;
+				height: 200px;
+				background-image: url(zz.png) ;
+				cursor: move;
+				display: none;
+			}
+			#box2{
+				width: 400px;
+				height: 400px;
+				overflow: hidden;
+				position: absolute;
+				left: 410px;
+				top:0;
+				display: none;
+			}
+			#box2 #bigimg{
+				width: 800px;
+				height: 800px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<img src="tp.jpg" />
+			<span id="zz"></span>
+		</div>
+		<div id="box2">
+			<img src="tp.jpg" id="bigimg"/>
+		</div>
+		<script>
+			//获取元素
+			var box = document.getElementById("box");
+			var span = document.getElementById("zz");
+			var bigimg = document.getElementById("bigimg");
+			var leaderx=0;var leadery=0;
+			var targetx=0;var targety=0;
+			
+			//当鼠标越过图片时
+			box.onmousemove = function(event){
+				
+				//获取事件
+				var event = event||window.event;
+				//获取鼠标的位置
+				var x = event.pageX;
+				//alert(x);
+				var y =event.pageY;					
+//				leaderx = span.offsetLeft;
+//				leadery = span.offsetTop;
+				targetx = x-span.offsetWidth/2;
+				targety = y-span.offsetHeight/2;
+				if(targetx>=200){
+					targetx=200;
+				}
+				if(targety>=200){
+					targety=200;
+				}
+				if(targetx<=0){
+					targetx=0;
+				}
+				if(targety<=0){
+					targety=0;
+				}
+				span.style.display = "block";
+				box2.style.display = "block";
+				moveBigImg(targetx,targety);
+				span.style.left = targetx+"px";
+				span.style.top = targety+"px";
+			}
+			
+//			setInterval(function(){
+//				leaderx = leaderx+(targetx-leaderx);
+//				leadery = leadery+(targety-leadery);
+//				span.style.left = leaderx+"px";
+//				span.style.top = leadery+"px";
+//			},0)
+			box.onmouseleave = function(){ 	     
+             span.style.left = -200 + "px"; 
+	         span.style.top = -200 + "px";		 
+	         span.style.display="none"; 
+	         box2.style.display = "none"
+			}
+			function moveBigImg(targetx,targety){
+				var a  =800*targetx/400;
+				var b = 800*targety/400;
+				//alert(a);
+				bigimg.style.transform="translate("+-a+"px,"+-b+"px)";
+			}
+		</script>
+	</body>
+</html>

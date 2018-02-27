@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播</title>
+		<link type="text/css" rel="stylesheet" href="css/banner.css" />
+	</head>
+	<body>
+		<div class="banner">
+			<div class="pic">
+			<ul id="list1">
+				<li><a href="#"><img src="img/xmad_14954204563199_hUckQ.jpg"></a></li>
+				<li><a href="#"><img src="img/xmad_14992220383574_axNUK.jpg"></a></li>
+				<li><a href="#"><img src="img/xmad_14997459145442_afgcj.jpg"></a></li>
+				<li><a href="#"><img src="img/xmad_150002772341_wheaY.jpg"></a></li>
+				<li><a href="#"><img src="img/xmad_15000467303231_eBCGj.jpg"></a></li>
+				<li><a href="#"><img src="img/xmad_15000855208726_BihRE.jpg"></a></li>
+				<li><a href="#"><img src="img/xmad_14954204563199_hUckQ.jpg"></a></li>
+				<li><a href="#"><img src="img/xmad_14992220383574_axNUK.jpg"></a></li>
+			</ul>
+			</div>
+			<div class="bt">
+				<ol id="list2">
+					<li class="current"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+			<div class="jt">
+				<span class="sp1"></span>
+				<span class="sp2"></span>
+			</div>
+		</div>
+		<!--实现轮播效果-->
+		<script>
+			//获取banner
+			var banner = document.getElementsByTagName("div")[0];
+			//获取ul 
+			var ulList = document.getElementById("list1");
+			//获取ol 
+			var olLists = document.getElementById("list2").children;//length:6
+			//获取 span 
+			var spans = document.getElementsByClassName("jt")[0].children;
+			setInterval(function(){
+				leader = leader+(target-leader)/10;
+				ulList.style.left = leader+"px";
+			},30);
+			
+			
+			//先默认箭头隐藏
+			for(var i= 0;i<spans.length;i++){
+					spans[i].style.display = "none";
+					spans[i].style.cursor = "pointer";				
+				}
+			for(var i=0;i<olLists.length;i++){
+				olLists[i].style.cursor = "pointer";
+			}
+			//var jt =document.getElementsByClassName("jt")[0];
+			//记录位置
+				var target ,leader=0;
+				var  k=0;
+				var timer = setInterval(change,2000);
+				var timer1 = setInterval(hand,2000);
+				
+				//封装一个清除所有小圆的方法
+				function clear(){
+					for(var i=0;i<olLists.length;i++){
+							olLists[i].className = "";							
+						}	
+				}
+				
+				//箭头隐匿
+				function hid(){
+					for(var i= 0;i<spans.length;i++){
+							spans[i].style.display = "none";
+						}
+				}
+				
+				//实现图片和小按钮自动变换
+				function change(){
+					k+=1;						
+					if(k<olLists.length){
+						//ulList.style.left =target+ "px";
+						//清除所有小圆周样式
+						clear();					
+							olLists[k].className = "current";												
+					}
+					else{					
+						k=0;												
+						//ulList.style.left = "0px";
+						clear();
+						olLists[k].className = "current";
+					}
+					leader = parseInt(ulList.style.left)||0;
+					target = -1226*k;
+//					alert(leader);
+//					alert(target);
+				}
+				
+				//实现鼠标放按钮指定的内容				
+				function hand(){
+					//给小按钮绑定事件
+					for(var i= 0;i<olLists.length;i++){
+						//鼠标放上去
+						olLists[i].index= i;
+						olLists[i].onmouseover = function(){
+							//清除所有小圆
+							clear();
+							clearInterval(timer);
+							leader  = parseInt(ulList.style.left)||0;
+							this.className = "current";
+							target = this.index*-1226;							
+							//ulList.style.left = leader +"px";
+							//设置缓动							
+						}
+						//当鼠标移开时
+						
+						olLists[i].onmouseout = function(){
+							k=this.index;
+							//alert(k);
+							//target = k*1226;
+							clearInterval(timer);
+							timer = setInterval(hand,2000);
+						}
+						
+							//当鼠标放在banner上时，箭头出现 
+						banner.onmouseover = function(){	
+						clearInterval(timer);
+						//alert(k);
+						//alert(target);
+						for(var i= 0;i<spans.length;i++){
+							spans[i].style.display = "block";
+							//关闭自动轮播定时器																			
+						//当左箭头被点击时
+							spans[0].onclick = function(){
+																
+							//var len = ullist[k].offsetLeft();
+							 // alert(target);
+//							 if(k==-1){
+//							 		k=5;
+//							 		//alert(k);
+//							 	}
+							 if(target>=0){	
+							 		leader = parseInt(ulList.style.left)||0;
+							 		target=-6130;
+							 		k=5;
+							 		clear();
+							 		olLists[k].className = "current";
+							 		//ulList.style.left=target+"px";
+							 		
+							 }
+							 else{
+							 	//alert(k);
+							 	
+							 	target=target+1226;							 	
+							 	k=k-1;
+							 	clear();
+							 	olLists[k].className = "current";
+							 	//ulList.style.left=target+"px";
+							 }
+							 
+							 //alert(len);
+						}
+							//当右箭头被点击时
+							spans[1].onclick = function(){
+								if(target<=-6130){
+									leader = parseInt(ulList.style.left)||0;
+									target = 0;
+									k=0;					
+									clear();									
+									//ulList.style.left=target+"px";
+									olLists[k].className = "current";
+								}
+								else{
+									clear();
+									
+									k=k+1;
+									leader = parseInt(ulList.style.left)||0;
+									target = target-1226;
+									//ulList.style.left = target+"px";
+									olLists[k].className = "current";
+								}
+							}
+							
+						}
+						}
+						
+						////当鼠标移开banner时，箭头消失
+						banner.onmouseout = function(){
+//							if(k==5){
+//								k=-1;							
+//							}
+							hid();
+								clearInterval(timer);
+							timer =	setInterval(change,2000);
+							
+						}
+					}//for
+					
+			}//hand()
+			
+				
+				
+				
+				
+				
+				
+		</script>
+	</body>
+</html>

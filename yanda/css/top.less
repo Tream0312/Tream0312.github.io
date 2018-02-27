@@ -1,0 +1,134 @@
+#top{
+    width: 100%;
+    height: 110px;
+    background: #fff; 
+    position: relative;    
+    .top-logo{
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+    .top-nav{
+        width: 90%;
+        height: 40px;      
+        position: absolute;
+        bottom: 5px;
+        margin-left: 210px;      
+        .top-nav-list{
+            width: 90%;
+            height: 20px;
+            margin-left: 60px;
+            li{
+                float: left;
+                width:120px;
+                height: 45px;
+                margin-left: 15px;
+//              border-left:1px solid #ccc ;
+                text-align: center;
+                line-height: 20px;
+                position: relative;
+                
+                a{
+                    display: inline-block;
+                    width: 120px;
+                    height: 45px;
+                    text-align: center;
+                    line-height: 40px;
+                }
+                
+                //二级菜单：关于我们
+                .nav-knowme{
+                    position: absolute;
+                    width: 120px;
+                    height: 185px;                   
+                    background: #F09334;
+                    top:44px;
+                    left: 0;
+                    .me-list{
+                        height:185px ;
+                    }          
+                }
+                //二级菜单：产品中心
+                .nav-product{
+                    position: absolute;
+                    width: 120px;
+                    height: 245px;                   
+                    background: #F09334;
+                    top:44px;
+                    left: 0;
+                    .product-all{
+                        height:245px ;                       
+                    }                   
+                }
+                //二级菜单：新闻资讯/生产实力
+                 .nav-news,.nav-production{
+                    position: absolute;
+                    width: 120px;
+                    height: 155px;                   
+                    background: #F09334;
+                    top:44px;
+                    left: 0;
+                    .product-all{
+                        height:155px ;                       
+                    }                   
+                }
+                //二级菜单：联系我们
+                .nav-callme{
+                    position: absolute;
+                    width: 120px;
+                    height: 65px;                   
+                    background: #F09334;
+                    top:44px;
+                    left: 0;
+                    .callme-all{
+                        height:65px ;                       
+                    }                   
+                }
+                //所有二级菜单
+                 .me-list,.product-all,.news-all,.production-all,.callme-all{                                                                  
+                        li{
+                            margin:0 ;
+                           height: 30px;                         
+                            a{
+                                color: #fff;
+                                line-height:30px;                                
+                                height: 30px;                              
+                            }
+                        }
+                        li:hover{
+                            background: rgba(25,25,25,.6);
+                        }
+                    }
+                
+            }           
+            li:first-child{
+                border-style:none ;
+            }
+        }
+    }
+    .top-right{
+        width: 50%;
+        height: 20px;
+        position: absolute;
+        right: 10px;     
+        .top-right-list{
+            width: 100%;
+            height: 20px;
+           li{
+                float: left;
+                height: 50px;
+                line-height: 50px;
+                margin-left:15px ;
+                color: #c0c0c0;
+                .iconfont{
+                    font-size:19px ;                    
+                }
+                span{
+                    font-size: 13px;
+                }
+           }
+        }
+    }
+}

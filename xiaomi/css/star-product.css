@@ -1,0 +1,146 @@
+.m-star-product {
+  width: 1226px;
+  height: 424px;
+  background: #fff;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+}
+.m-star-product .title {
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+}
+.m-star-product .more {
+  width: 75px;
+  height: 25px;
+  text-align: center;
+  position: absolute;
+  top: 22px;
+  right: 0;
+}
+.m-star-product .more .more-a1 {
+  display: inline-block;
+  width: 36px;
+  height: 25px;
+  border: 1px solid #E0E0E0;
+  float: left;
+  text-align: center;
+  line-height: 20px;
+}
+.m-star-product .more .more-a1 .iconfont {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  font-size: 16px;
+}
+.m-star-product .more .more-a2 {
+  display: inline-block;
+  width: 36px;
+  height: 25px;
+  border: 1px solid #E0E0E0;
+  border-left: none;
+  line-height: 20px;
+  text-align: center;
+  float: right;
+}
+.m-star-product .more .more-a2 .iconfont {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 16px;
+  color: #B0B0B0;
+}
+.m-star-product .u-star-bd {
+  width: 1226px;
+}
+.m-star-product .u-star-bd .star-bd-list {
+  width: 1226px;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list1,
+.m-star-product .u-star-bd .star-bd-list .bd-list2,
+.m-star-product .u-star-bd .star-bd-list .bd-list3,
+.m-star-product .u-star-bd .star-bd-list .bd-list4,
+.m-star-product .u-star-bd .star-bd-list .bd-list5 {
+  float: left;
+  width: 234px;
+  height: 330px;
+  background: #fafafa;
+  border-top: 1px solid #ffac13;
+  margin-right: 14px ;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list1 .list-a1,
+.m-star-product .u-star-bd .star-bd-list .bd-list2 .list-a1,
+.m-star-product .u-star-bd .star-bd-list .bd-list3 .list-a1,
+.m-star-product .u-star-bd .star-bd-list .bd-list4 .list-a1,
+.m-star-product .u-star-bd .star-bd-list .bd-list5 .list-a1 {
+  display: block;
+  width: 100%;
+  height: 180px;
+  line-height: 160px;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list1 .list-a1 img,
+.m-star-product .u-star-bd .star-bd-list .bd-list2 .list-a1 img,
+.m-star-product .u-star-bd .star-bd-list .bd-list3 .list-a1 img,
+.m-star-product .u-star-bd .star-bd-list .bd-list4 .list-a1 img,
+.m-star-product .u-star-bd .star-bd-list .bd-list5 .list-a1 img {
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  margin: 25px 37px 25px 37px;
+  float: left;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list1 .title2,
+.m-star-product .u-star-bd .star-bd-list .bd-list2 .title2,
+.m-star-product .u-star-bd .star-bd-list .bd-list3 .title2,
+.m-star-product .u-star-bd .star-bd-list .bd-list4 .title2,
+.m-star-product .u-star-bd .star-bd-list .bd-list5 .title2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  line-height: 2em;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list1 .title2 a:hover,
+.m-star-product .u-star-bd .star-bd-list .bd-list2 .title2 a:hover,
+.m-star-product .u-star-bd .star-bd-list .bd-list3 .title2 a:hover,
+.m-star-product .u-star-bd .star-bd-list .bd-list4 .title2 a:hover,
+.m-star-product .u-star-bd .star-bd-list .bd-list5 .title2 a:hover {
+  color: #333;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list1 .desc,
+.m-star-product .u-star-bd .star-bd-list .bd-list2 .desc,
+.m-star-product .u-star-bd .star-bd-list .bd-list3 .desc,
+.m-star-product .u-star-bd .star-bd-list .bd-list4 .desc,
+.m-star-product .u-star-bd .star-bd-list .bd-list5 .desc {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #B0B0B0;
+  margin-bottom: 10px;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list1 .price,
+.m-star-product .u-star-bd .star-bd-list .bd-list2 .price,
+.m-star-product .u-star-bd .star-bd-list .bd-list3 .price,
+.m-star-product .u-star-bd .star-bd-list .bd-list4 .price,
+.m-star-product .u-star-bd .star-bd-list .bd-list5 .price {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #FF6700;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list2 {
+  border-top: 1px solid #83c44e;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list3 {
+  border-top: 1px solid #2196f3;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list4 {
+  border-top: 1px solid #e53935;
+}
+.m-star-product .u-star-bd .star-bd-list .bd-list5 {
+  border-top: 1px solid #00c0a5;
+  margin-right: 0px;
+}

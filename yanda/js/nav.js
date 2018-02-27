@@ -1,0 +1,12 @@
+$(function(){
+	$(".top-nav-list").children("li").children("div").css("display","none");
+	$(".top-nav-list").children("li").mouseenter(function(){
+		$(this).css({background:"#0F8B4D",opacity:.8}).siblings().css("background","#fff");
+		$(this).children("div").css({zindex:100,background:"#0F8B4D"});
+		$(this).children("div").slideDown(100).parent().siblings().children("div").slideUp(600);	
+	})
+	$(".top-nav-list").children("li").mouseleave(function(){
+		$(this).css({background:"#fff"})
+		$(this).children("div").slideUp(600);
+	})
+})

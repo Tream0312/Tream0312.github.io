@@ -1,0 +1,301 @@
+.m-product{
+    width:1226px;
+    height: 460px;
+    background: #fff;
+    margin:0 auto;
+}
+.m-product{
+    position: relative;
+    .u-product-list{
+        position: absolute;
+        z-index: 1;
+        width:234px;
+        padding:20px 0 ;
+        top:0;
+        left: 0;     
+        background: rgba(0,0,0,.6);
+        .product-list-li{
+            padding-left: 30px;
+            height: 42px;
+            
+           a{
+               
+               font-size: 14px;
+               font-weight: 600px;
+               color: #fff;
+               text-align: center;
+               line-height: 42px;
+           }
+           .iconfont{
+               float: right;
+               color: #fff;
+               margin-right: 20px;
+               line-height: 42px;
+               text-align: center;
+           }
+           
+           /**隐藏导航栏  3列的**/
+            .product-list-col3{
+                left: 234px;
+                width: 795px;
+                position:absolute;
+                background: #fff;
+                top:0px;
+                display: none;
+                border-top: 1px solid #E0E0E0;
+                box-shadow: 0px 6px 15px 0px rgba(0,0,0,.18);
+                .phone-card1,.phone-card2,.phone-card3{
+                    float: left;
+                    width:265px;
+                    height: 459px;
+                     background: #fff;             
+                    li{
+                        height:76px;
+                        width: 265px;
+                        position: relative;
+                        
+                        a:first-child{
+                            width: 170px;
+                            height: 40px;
+                            color: #333;
+                            position: relative;
+                             display: inline-block;
+                            line-height: 76px;
+                           
+                           img{
+                               display: inline-block;
+                               width: 40px;
+                               height: 40px;
+                               overflow: hidden;
+                               top:20px;
+                               position: absolute;
+                               left: 20px;
+                           }
+                           span{
+                               position: absolute;
+                               left: 70px; 
+                               transition: .4s;                            
+                             &:hover{
+                                 color: #FF6700;
+                             }
+                           }
+                           
+                        }
+                        .xg{
+                            display: inline-block;
+                            color: #FF6700;
+                            position: absolute;
+                            height: 22px;
+                            width:58px;
+                            right: 15px;
+                            top:27px;
+                            line-height: 22px;
+                            border: 1px solid #FF6700;
+                            transition: .4s;
+                            &:hover{
+                                background: #FF6700;
+                                color: #fff;
+                            }
+                        }
+                        
+                    }
+                }
+                
+            }
+            
+             /**隐藏导航栏  2列的**/
+            .product-list-col2{
+                width: 530px;
+                position:absolute;
+                background: #fff;
+                top:0px;
+                left: 234px;
+                display: none;
+                border-top: 1px solid #E0E0E0;
+                box-shadow: 0px 6px 15px 0px rgba(0,0,0,.18);
+                
+                ul{
+                    width:265px ;
+                    height: 459px;
+                    float: left;
+                    li{
+                        width:265px;
+                        height: 76px;
+                        position: relative;
+                     
+                        a{
+                            color: #333;
+                            
+                           &:first-child{
+                               display: inline-block;
+                              width: 170px;
+                              height: 40px;
+                             position: absolute;
+                             top:20px;
+                             img{
+                                 position: absolute;
+                                 left:20px;
+                                
+                             }
+                             span{
+                                 position: absolute;
+                                 left: 70px;
+                                 line-height: 40px;
+                                  overflow: hidden;
+                                  display: inline-block;
+                                  &:hover{
+                                      color: #FF6700;
+                                  }
+                             }
+                           }
+                        }
+                       .xg{
+                           position: absolute;
+                           width: 56px;
+                           height: 22px;
+                           right: 20px;
+                           top:30px;
+                           border:1px solid #FF6700;
+                           line-height: 22px;
+                           transition: .2s;
+                           &:hover{
+                               color:#fff ;
+                               background: #FF6700;
+                           }
+                       }
+                       
+                    }
+                }
+               
+            }
+            
+            .product-list-col1{
+                width: 270px;
+                position:absolute;
+                background: #fff;
+                top:0px;
+                left: 234px;
+                display: none;
+                border-top: 1px solid #E0E0E0;
+                box-shadow: 0px 6px 15px 0px rgba(0,0,0,.18);
+                
+                ul{
+                    width:265px ;
+                    height: 459px;
+                    float: left;
+                    li{
+                        width:265px;
+                        height: 76px;
+                        position: relative;
+                     
+                        a{
+                            color: #333;
+                            
+                           &:first-child{
+                               display: inline-block;
+                              width: 170px;
+                              height: 40px;
+                             position: absolute;
+                             top:20px;
+                             img{
+                                 position: absolute;
+                                 left:20px;
+                                
+                             }
+                             span{
+                                 position: absolute;
+                                 left: 50px;
+                                 line-height: 40px;
+                                 width:170px;
+                                  text-align: left;
+                                  padding-left: 20px;
+                                  display: inline-block;
+                                  &:hover{
+                                      color: #FF6700;
+                                  }
+                             }
+                           }
+                        }
+                       .xg{
+                           position: absolute;
+                           width: 56px;
+                           height: 22px;
+                           right: 20px;
+                           top:30px;
+                           border:1px solid #FF6700;
+                           line-height: 22px;
+                           transition: .2s;
+                           &:hover{
+                               color:#fff ;
+                               background: #FF6700;
+                           }
+                       }
+                       
+                    }
+                }
+               
+            }
+              
+              /**隐藏导航栏  4列的**/
+                .product-list-col4{
+                width: 992px;
+                position:absolute;
+                background: #fff;
+                top:0px;
+                left: 234px;
+                display: none;
+                border-top: 1px solid #E0E0E0;
+                box-shadow: 0px 6px 15px 0px rgba(0,0,0,.18);
+                ul{
+                    width:248px;
+                    height: 459px;
+                    float: left;
+                    li{
+                        width:265px;
+                        height: 76px;
+                        position: relative;
+                        a{
+                            color: #333;
+                            position:absolute;
+                            left: 20px;
+                            top:20px;
+                            img{
+                                margin-right: 5px;
+                            }
+                            span{
+                                color: #333;
+                                &:hover{
+                                    color: #FF6700;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                
+                
+                
+                
+              }
+              
+              
+           &:hover .hd{
+               display: block;
+           }
+           
+           &:hover{
+               background: #FF6700;
+           }
+           
+        }
+        
+    }
+    
+    .u-product-banner{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 460px;
+    }
+    
+}

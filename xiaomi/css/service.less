@@ -1,0 +1,94 @@
+.m-service{
+    width: 1226px;
+   padding: 27px 0;
+    background: #fff;
+    margin: 0 auto;
+   
+}
+.m-service{
+    
+/**服务头部**/
+    .u-service-top{
+        width: 100%;
+        display: inline-block;
+        line-height: 25px;
+        
+       li{
+           width:19.8%;
+           height: 25px;
+           float: left;
+            text-align: center;
+            border-right: 1px solid #E0E0E0;
+           .service-a{
+               font-size: 16px;
+               color: #616161;
+               .iconfont{
+                   font-size: 24px;
+                   vertical-align: middle;
+               }             
+           }
+           &:hover .service-a{
+               color: #FF6700;
+           }
+           &:last-child{
+                border-right:none;
+           }
+       }
+    }
+    
+    
+    /**服务下部**/
+    .u-service-bottom{
+       margin-top: 20px;
+       padding-top: 30px;
+        border-top: 1px solid #E0E0E0;
+        height: 150px;
+       .service-link{
+           float: left;
+           width: 160px;
+           height: 112px;
+           font-size: 12px;
+           dt{
+               font-size: 14px;
+               color: #333;
+               margin-bottom: 25px;
+           }
+           dd{
+               a{
+                 display: block;
+                 &:hover{
+                     color: #FF6700;
+                 }
+               }
+               color: #757575;
+               margin-bottom: 10px;
+           }
+       }
+       
+       .service-right{
+           width: 251px;
+           height: 112px;
+           float: right;
+           border-left: 1px solid #E0E0E0;
+           text-align: center;
+           .phone{
+               font-size: 22px;
+               color: #FF6700;
+           }
+           p:nth-of-type(2){
+               font-size: 12px;
+               margin:0 0 16px;
+           }
+           .zx{
+               padding:6px 9px;
+               border: 1px solid #FF6700;
+               color: #FF6700;
+               transition: .2s;
+               &:hover{
+                   background: #FF6700;
+                   color: #fff;
+               }
+           }
+       }
+    }
+}

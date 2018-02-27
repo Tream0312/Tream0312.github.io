@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<form method="post">
+			用户名：<input type="text" name="username" id="username">
+			<input type="radio" name="sex" id="man" checked>男
+			<input type="radio" name="sex" id="woman">女
+			年龄：<input type="text" name="age" id="age">
+			<input type="button" id="btn" value="提交"> 
+			<p id="content" style="width: 300px;height: 50px;border: 1px solid red;"></p>
+		</form>
+		
+		<script>
+			//封装ID选择元素函数
+			function getId(id){
+				return document.getElementById(id);
+			}
+			
+			var btn = getId("btn");
+			btn.onclick=function(){
+				//创建一个XMLHTTP对象
+			var username=getId("username").value;
+			console.log(username);
+			var sex = getId("man").checked?"man":"woman";
+			console.log(sex);
+			var age = getId("age").value;
+			console.log(age);
+			var xmlhttp=null;
+			//处理兼容
+			if(window.XMLHttpRequest){
+				xmlhttp= new XMLHttpRequest();
+			}else{
+				xmlhttp=new ActiveXObject("microsofe.XMLHTTP");
+			}
+			//打开对象
+			//var url="http://www.example.com/post.php?username="+username+"&sex="+sex+"&age="+age;
+			xmlhttp.open("post","post.php",true);
+			//创建对象头
+			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			//发送对象			
+			xmlhttp.send("username="+username+"&sex="+sex+"&age="+age);
+			//发送后如何处理
+			//xmlhttp.send();
+			xmlhttp.onreadystatechange=function(){
+				if(xmlhttp.readyState==4&&xmlhttp.status==200){					
+					//console.log(xmlhttp.responseText);
+					getId("content").innerHTML=xmlhttp.responseText;
+					}
+				}
+			
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+.g-ft{
+	width: 100%;
+	position: relative;
+	top:-60px;
+	height: 460px;
+	background: #FAFAFA;
+	z-index: 1;
+	margin-bottom: 0;
+}
+

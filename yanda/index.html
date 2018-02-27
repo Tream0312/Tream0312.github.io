@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>雅安交通官网首页</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_433424_e1dhnzjkd6e3tyb9.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-1.12.2.min.js"></script>
+		<script type="text/javascript" src="js/nav.js" ></script>		
+		<!--通过JS给每个产品加背景图标-->
+				<script type="text/javascript">
+					//把所有图片路径放在数组中
+					window.onload=function(){
+						var arry = ["bg28.png","bg29.png","bg30.png","bg31.png","bg32.png","bg33.png","bg34.png","bg35.png"];
+						var ul = document.getElementById("product-list");
+						var lis = ul.getElementsByTagName("a");
+						//console.log(li);
+						//console.log(ul.childNodes);
+						for (var i =0;i<lis.length;i++){	
+						//console.log(arry[i]);
+							lis[i].style.backgroundImage="url(YAIMGS/"+arry[i]+")";	
+							lis[i].onmouseenter = function(){
+								for (var i =0;i<lis.length;i++){
+									lis[i].style.backgroundImage="url(YAIMGS/"+arry[i]+")"
+								}
+								this.style.backgroundImage="url(YAIMGS/"+arry[i]+")"+"scroll rgb(255, 255, 255);";
+							}
+							
+						}		
+						
+					}
+								
+				</script>
+	</head>
+	<body>
+		<!--雅安交通官网首页内容-->
+		<div id="home-content">
+			<div id="top">
+				<div class="top-logo">
+					<a href="#"><img src="YAIMGS/bg1.png"></a>
+				</div>
+				<div class="top-nav">
+					<ul class="top-nav-list">
+						<li><a href="#">雅安首页</a>	
+							<div class="nav-SY">
+							</div>
+						</li>
+						<li><a href="#">走进我们</a>
+							<div class="nav-knowme">					
+								<ul class="me-list">
+									<li><a href="#">企业简介</a></li>
+									<li><a href="#">发展历程</a></li>
+									<li><a href="#">企业文化</a></li>
+									<li><a href="#">人文风采</a></li>
+									<li><a href="#">企业愿景</a></li>
+									<li><a href="#">招聘信息</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">产品中心</a>
+							<div class="nav-product">					
+								<ul class="product-all">
+									<li><a href="#">交通标志牌</a></li>
+									<li><a href="#">车库护墙角</a></li>
+									<li><a href="#">车位定位器</a></li>
+									<li><a href="#">通道减速带</a></li>
+									<li><a href="#">停车场灯箱</a></li>
+									<li><a href="#">防护产品类</a></li>
+									<li><a href="#">防撞产品类</a></li>
+									<li><a href="#">CAD制图设计</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">新闻资讯</a>
+							<div class="nav-news">					
+								<ul class="news-all">
+									<li><a href="#">行业资讯</a></li>
+									<li><a href="#">企业动态</a></li>
+									<li><a href="#">产品百科</a></li>
+									<li><a href="#">安装说明</a></li>
+									<li><a href="#">物流方案</a></li>				
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">生产实力</a>
+							<div class="nav-production">					
+								<ul class="production-all">
+									<li><a href="#">研发团队</a></li>
+									<li><a href="#">生产设备</a></li>
+									<li><a href="#">生产能力</a></li>
+									<li><a href="#">车间实景</a></li>
+									<li><a href="#">仓储库存</a></li>				
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">联系我们</a>
+							<div class="nav-callme">					
+								<ul class="callme-all">
+									<li><a href="#">联系方式</a></li>
+									<li><a href="#">公司地址</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			
+				<div class="top-right">
+					<ul class="top-right-list">
+						<li>
+							<i class="iconfont icon-dianhua"></i>
+							<span>18820007031</span>
+						</li>
+						<li>
+							<i class="iconfont icon-youxiang"></i>
+							<span>743479880@qq.com</span>
+						</li>
+						<li>
+							<i class="iconfont icon-weibo"></i>
+							<span>企业微博</span>
+						</li>
+						<li>
+							<i class="iconfont icon-weimingming-"></i>
+							<span>企业微信</span>
+						</li>
+						<li>
+							<i class="iconfont icon-myicon"></i>
+							<span>发送邮件</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--雅安交通官网轮播图-->
+			<div id="banner" >				
+				<ul class="banner-list">
+					<li class="current">
+						<img src="YAIMGS/1.jpg" />
+					</li>
+					<li>
+						<img src="YAIMGS/2.jpg" />
+					</li>
+					<li>
+						<img src="YAIMGS/3.jpg"/>
+					</li>
+				</ul>
+				<ol class="cir-list">
+					<li class="current"></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<div class="jt">
+					<span class="iconfont icon-jiantou"></span>
+					<span class="iconfont icon-jiantou-copy-copy"></span>
+				</div>
+			</div>
+			<script src="js/banner.js"></script>
+			<!--产品与服务-->
+			<div id="product-service">
+				<div class="product-icon">
+					<h2 class="title">产品&服务</h2>
+					<ul id="product-list">
+						<li><a href="#">交通标志牌</a></li>
+						<li><a href="#">车库护墙角</a></li>
+						<li><a href="#">车位定位器</a></li>
+						<li><a href="#">通道减速带</a></li>
+						<li><a href="#">LED指示灯</a></li>
+						<li><a href="#">防撞产品</a></li>
+						<li><a href="#">防护产品</a></li>
+						<li><a href="#">CAD图纸设计</a></li>
+					</ul>									
+				</div>
+				<div class="product-pic">
+					<div class="pic">
+					<a href="#"><img src="YAIMGS/tupian1.jpg"/></a>
+					<a href="#">停车场标牌</a>
+					</div>
+					<div class="pic">
+					<a href="#"><img src="YAIMGS/tupian1a.jpg"/></a>
+					<a href="#">车位定位器</a>
+					</div>
+					<div class="pic">
+					<a href="#"><img src="YAIMGS/tupian1a2a.jpg"/></a>
+					<a href="#">车库减速带</a>
+					</div>
+					<div class="pic">
+					<a href="#"><img src="YAIMGS/tupian2.jpg"/></a>
+					<a href="#">车辆护角墙</a>
+					</div>
+				</div>
+			</div>
+			<!--客户关系-->
+			<div id="client">		
+				<h2>热销爆款推荐 / 知名合作客户</h2>
+				<div class="client-box">
+				<ul class="client-list">
+					<li class="client-p1"> 				
+						<img src="YAIMGS/b6ef6a865539bb5e15ff59362b442f27.jpg"/>
+						<h3>停车场反光标志牌</h3>
+						<p class="fgj">				
+						医药物流项目是物流发展的核心业务，是公司重要战略发展方向，至运作第一个医药客户以来<br>，物流已
+						成功为多个医药企业提供专业的第三方物流业务，积累了10年多的医药物流管理流程，是我们	
+						</p>
+						<a href="#"></a>					
+					</li>
+					<li class="client-p1">
+						<img src="YAIMGS/423713127450fdf9a250f44768149c18.jpg"/>
+						<h3>停车场防撞护角墙</h3>
+						<p class="fgj">				
+						 食品物流项目是物流有限公司在医药物流基础上根据国内食品流通市场的需求和公司自己的战<br>略定位而衍生的一个重要业务。近10年来，公司从食品包装材料的运输服务逐步延伸到高端进口食品的运输、仓储等外包服...
+						</p>
+						<a href="#"></a>	
+					</li>
+					<li class="client-p1">
+						<img src="YAIMGS/tupian7.jpg"/>
+						<h3>停车场定位器</h3>
+						<p class="fgj">				
+						仓储物流，就是利用自建或租赁库房、场地，储存、保管、装卸搬运、配送货物。传统的仓储定<br>义是从物资储备的角度给出的。现代仓储不是传统意义上的仓库、仓库管理，而是在经济全球化与供应链一体化背景下的...
+						</p>
+						<a href="#"></a>							
+					</li>
+					<li class="client-p1">
+						<img src="YAIMGS/e6c64fd167bb4bd21834d76eb23259fb.jpg"/>
+						<h3>停车场道路减速带</h3>
+						<p class="fgj">				
+						 运输是指人或货物借助运输工具和运输基础设施在空间上产生的位置移动。运输包括生产领域的<br>运输和流通领域的运输。 物流运输方式有航空，火车，轮船，集卡等全方位的物流工具与方案，竭力为客户提供完善的...
+						</p>
+						<a href="#"></a>	
+					</li>
+					<li class="client-p1">
+						<img src="YAIMGS/1b3dfba18fa5783396b5ed9228341a93.jpg"/>
+						<h3>停车场LED指示灯箱</h3>
+						<p class="fgj">				
+						多式联运：由两种及其以上的交通工具相互衔接、转运而共同完成的运输过程统称为复合运输，我<br>国习惯上称之为多式联运。《联合国国际货物多式联运公约》对国际多式联运所下的定义是：按照国际多式联运合同，...
+						</p>
+						<a href="#"></a>	
+					</li>	
+					
+				
+				</ul>
+				<div class="star-box">
+				<ol class="star-client">
+					<li><img src="YAIMGS/kual01.jpg"/></li>
+					<li><img src="YAIMGS/kual02.jpg"/></li>
+					<li><img src="YAIMGS/kual03.jpg"/></li>
+					<li><img src="YAIMGS/kual04.jpg"/></li>
+					<li><img src="YAIMGS/kual06.jpg"/></li>
+					<li><img src="YAIMGS/kual07.jpg"/></li>
+					<li><img src="YAIMGS/kual08.jpg"/></li>
+					<li><img src="YAIMGS/kual09.jpg"/></li>
+				</ol>
+				</div>
+				</div>
+			</div>
+			<script src="js/client.js"></script>
+			<!--公司介绍-->
+			<div id="about">
+				<div class="about-left">			
+					<img src="YAIMGS/tupian11.jpg" />
+					<h3>公司简介</h3>
+					<p>欢迎光临"广州雅安交通设施有限公司"，"雅安达"隶属于本司，本司专业从事停车场交通设施产品研发、生产、销售一条龙服务，专业生产厂家是你工程项目一站式采购基地，详情点击进入......</p>
+				</div>
+				<div class="about-right">
+					
+					<img src="YAIMGS/tupian10.jpg"/>
+					<h3>车间生产</h3>
+					<p>雅安拥有一支专业的团队，每一位成员都有着本职工作的丰富经验，为企业的未来发展打下坚实的基础，我们一对一的销售服务，让您真正享受一站式的采购！...</p>
+				</div>
+			</div>
+			<!--
+         	   网页底部
+            -->
+			<div id="footer">
+				<dl class="about-me">
+					<dt>关于我们</dt>
+					<dd>企业简介</dd>
+					<dd>发展历程</dd>
+					<dd>企业文化</dd>
+					<dd>人文风采</dd>
+					<dd>企业愿景</dd>				
+				</dl>				
+				<dl class="product-center">
+					<dt>产品中心</dt>
+					<dd>交通标志</dd>
+					<dd>停车场灯箱</dd>
+					<dd>反光护墙角</dd>
+					<dd>车位定位器</dd>
+					<dd>道路减速带</dd>
+				</dl>
+				<dl class="news">
+					<dt>新闻资讯</dt>
+					<dd>行业资讯</dd>
+					<dd>企业动态</dd>
+					<dd>产品百科</dd>
+					<dd>安装说明</dd>
+					<dd>物流方案</dd>
+				</dl>
+				<dl class="production">
+					<dt>生产实力</dt>
+					<dd>研发团队</dd>
+					<dd>生产设备</dd>
+					<dd>生产能力	</dd>
+					<dd>车间实景</dd>
+					<dd>仓储库存</dd>
+				</dl>
+				<div class="callme">
+					<h3>联系我们</h3>
+					<div class="telephone">18820007031</div>
+					<div class="email">743479880@qq.com</div>			
+					<div class="copyright">2006-2017 广州雅安交通设施有限公司版权所有 粤审备 粤ICP备12070947号-2</div>	
+				</div>
+				<div class="weibo">
+					<img src="YAIMGS/tupian14.jpg">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

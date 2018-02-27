@@ -1,0 +1,164 @@
+.m-videos {
+  width: 1226px;
+  height: 400px;
+  background: #F5F5F5;
+  margin: 60px auto;
+}
+.m-videos {
+  /**视频头部**/
+}
+.m-videos .u-videos-top {
+  width: 1226px ;
+  height: 58px;
+}
+.m-videos .u-videos-top .top-title {
+  float: left;
+  font-size: 22px;
+  height: 58px;
+  line-height: 58px;
+  color: #333;
+}
+.m-videos .u-videos-top .videos-more {
+  float: right;
+  height: 58px;
+  line-height: 58px;
+}
+.m-videos .u-videos-top .videos-more span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  display: inline-block;
+  height: 22px;
+  line-height: 21px;
+  vertical-align: middle;
+  transition: .2s;
+}
+.m-videos .u-videos-top .videos-more span i {
+  border: 2px solid #B0B0B0;
+  border-radius: 50%;
+  background: #B0B0B0;
+  color: #fff;
+  margin-left: 8px;
+  height: 22px;
+  line-height: 22px;
+  position: relative;
+  top: 2px;
+  transition: .2s;
+}
+.m-videos .u-videos-top .videos-more:hover span {
+  color: #FF6700;
+}
+.m-videos .u-videos-top .videos-more:hover i {
+  background: #FF6700;
+  border-color: #FF6700;
+}
+.m-videos .u-videos-content {
+  width: 1226px;
+  height: 285px;
+}
+.m-videos .u-videos-content .videos-list,
+.m-videos .u-videos-content .videos-last {
+  width: 296px;
+  height: 285px;
+  float: left;
+  margin-right: 14px;
+  position: relative;
+  background: #fff;
+  transition: .2s;
+}
+.m-videos .u-videos-content .videos-list .videos-one,
+.m-videos .u-videos-content .videos-last .videos-one,
+.m-videos .u-videos-content .videos-list .videos-two,
+.m-videos .u-videos-content .videos-last .videos-two,
+.m-videos .u-videos-content .videos-list .videos-stree,
+.m-videos .u-videos-content .videos-last .videos-stree,
+.m-videos .u-videos-content .videos-list .videos-four,
+.m-videos .u-videos-content .videos-last .videos-four {
+  display: block;
+  width: 296px;
+  height: 180px;
+}
+.m-videos .u-videos-content .videos-list .videos-one img,
+.m-videos .u-videos-content .videos-last .videos-one img,
+.m-videos .u-videos-content .videos-list .videos-two img,
+.m-videos .u-videos-content .videos-last .videos-two img,
+.m-videos .u-videos-content .videos-list .videos-stree img,
+.m-videos .u-videos-content .videos-last .videos-stree img,
+.m-videos .u-videos-content .videos-list .videos-four img,
+.m-videos .u-videos-content .videos-last .videos-four img {
+  width: 296px;
+  height: 180px;
+}
+.m-videos .u-videos-content .videos-list .videos-one span,
+.m-videos .u-videos-content .videos-last .videos-one span,
+.m-videos .u-videos-content .videos-list .videos-two span,
+.m-videos .u-videos-content .videos-last .videos-two span,
+.m-videos .u-videos-content .videos-list .videos-stree span,
+.m-videos .u-videos-content .videos-last .videos-stree span,
+.m-videos .u-videos-content .videos-list .videos-four span,
+.m-videos .u-videos-content .videos-last .videos-four span {
+  position: absolute;
+  top: 142px;
+  left: 20px;
+  display: block;
+  width: 32px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  transition: .2s;
+}
+.m-videos .u-videos-content .videos-list .videos-one span .iconfont,
+.m-videos .u-videos-content .videos-last .videos-one span .iconfont,
+.m-videos .u-videos-content .videos-list .videos-two span .iconfont,
+.m-videos .u-videos-content .videos-last .videos-two span .iconfont,
+.m-videos .u-videos-content .videos-list .videos-stree span .iconfont,
+.m-videos .u-videos-content .videos-last .videos-stree span .iconfont,
+.m-videos .u-videos-content .videos-list .videos-four span .iconfont,
+.m-videos .u-videos-content .videos-last .videos-four span .iconfont {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: -11px;
+  left: 2px;
+}
+.m-videos .u-videos-content .videos-list .videos-one:hover span,
+.m-videos .u-videos-content .videos-last .videos-one:hover span,
+.m-videos .u-videos-content .videos-list .videos-two:hover span,
+.m-videos .u-videos-content .videos-last .videos-two:hover span,
+.m-videos .u-videos-content .videos-list .videos-stree:hover span,
+.m-videos .u-videos-content .videos-last .videos-stree:hover span,
+.m-videos .u-videos-content .videos-list .videos-four:hover span,
+.m-videos .u-videos-content .videos-last .videos-four:hover span {
+  background: #FF6700;
+  border-color: #FF6700 ;
+}
+.m-videos .u-videos-content .videos-list .list-title,
+.m-videos .u-videos-content .videos-last .list-title {
+  width: 296px;
+  text-align: center;
+  margin-top: 30px;
+}
+.m-videos .u-videos-content .videos-list .list-title a,
+.m-videos .u-videos-content .videos-last .list-title a {
+  color: #333;
+}
+.m-videos .u-videos-content .videos-list .list-title a:hover,
+.m-videos .u-videos-content .videos-last .list-title a:hover {
+  color: #FF6700;
+}
+.m-videos .u-videos-content .videos-list .list-talk,
+.m-videos .u-videos-content .videos-last .list-talk {
+  width: 296px;
+  text-align: center;
+  color: #B0B0B0;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.m-videos .u-videos-content .videos-list:hover,
+.m-videos .u-videos-content .videos-last:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px 0px rgba(0, 0, 0, 0.18);
+}
+.m-videos .u-videos-content .videos-last {
+  margin-right: 0;
+}

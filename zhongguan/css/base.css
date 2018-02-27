@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 320px;
+  position: relative;
+  background: #FFF;
+  font: 16px/1.5  Arial;
+  color: #222;
+}
+
+li {
+  list-style: none;
+	
+}
+a {
+  text-decoration: none;
+ 	color: black;
+ 	font: 16px;
+ 	color:#666;
+ 	font-weight: 400;
+}
