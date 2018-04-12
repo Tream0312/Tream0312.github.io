@@ -183,6 +183,16 @@
   				 height: 100%;
   			}
   		</style>
+      <script>
+        //当图片1滑动时
+        $(document).on('pageinit','img1',function(){
+          $('div').on('swipeleft',function(){
+            //先隐藏所有图片
+            $(this).parent().sibings().children('div').css('dispaly','none');
+            $(this).parent().next().children('div').css('dispaly','block');
+          })
+        })
+      </script>
 	</head>
 	<body>
 		<!--我的简历首页-->
@@ -285,28 +295,28 @@
 	  		<h3>我的作品</h3>
 	  		<div data-role = 'page' id='img1'>
 	  			<div data-role = 'content'>
-	  				<a href="#img2" data-transition = 'slide'>
+	  				<a href="#img2">
 	  					<img src="./image/one1.jpg"/>
 	  				</a>
 	  			</div>
 	  		</div>
 	  		<div data-role = 'page' id='img2'>
 	  			<div data-role = 'content'>
-	  				<a href="#img3" data-transition = 'slide'>
+	  				<a href="#img3">
 	  					<img src="./image/one2.jpg"/>
 	  				</a>
 	  			</div>
 	  		</div>
 	  		<div data-role = 'page' id='img3'>
 	  			<div data-role = 'content'>
-	  				<a href="#img4" data-transition = 'slide'>
+	  				<a href="#img4">
 	  					<img src="./image/one3.jpg"/>
 	  				</a>
 	  			</div>
 	  		</div>
 	  		<div data-role = 'page' id='img4'>
 	  			<div data-role = 'content'>
-	  				<a href="#img1" data-transition = 'slide'>
+	  				<a href="#img1">
 	  					<img src="./image/one4.jpg"/>
 	  				</a>
 	  			</div>
