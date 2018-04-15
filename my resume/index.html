@@ -286,30 +286,30 @@
 	  		<h3>我的作品</h3>
 	  		<div data-role = 'page' id='img1'>
 	  			<div data-role = 'content'>
-	  				<a href="#img2">
+	  				<p>
 	  					<img src="./image/one1.jpg"/>
-	  				</a>
+	  				</p>
 	  			</div>
 	  		</div>
 	  		<div data-role = 'page' id='img2'>
 	  			<div data-role = 'content'>
-	  				<a href="#img3">
+	  				<p>
 	  					<img src="./image/one2.jpg"/>
-	  				</a>
+	  				</p>
 	  			</div>
 	  		</div>
 	  		<div data-role = 'page' id='img3'>
 	  			<div data-role = 'content'>
-	  				<a href="#img4">
+	  				<p>
 	  					<img src="./image/one3.jpg"/>
-	  				</a>
+	  				</p>
 	  			</div>
 	  		</div>
 	  		<div data-role = 'page' id='img4'>
 	  			<div data-role = 'content'>
-	  				<a href="#img1">
+	  				<p>
 	  					<img src="./image/one4.jpg"/>
-	  				</a>
+	  				</p>
 	  			</div>
 	  		</div>
 	  </section>
@@ -318,9 +318,7 @@
         //const imgs = $('#works div');  
         const works = $('#works');
         const worksLen = works.children().length; 
-        const clasName = 'ui-page ui-body-c ui-page-active';
-        //var index;
-        //+$(this).index()+1     
+        const clasName = 'ui-page ui-body-c ui-page-active';         
         //当图片1滑动时
         $(document).on('pageinit','#img1',function(){
           $('div').on('swipeleft',function(){
@@ -331,9 +329,7 @@
             $(this).parent().next().addClass(clasName);           
             if($(this).index()>worksLen-2){
               works.children('div').removeClass(clasName);
-              works.children('#img1').addClass(clasName);
-              //alert('d');
-              //$(this).parent().next().addClass(clasName);            
+              works.children('#img1').addClass(clasName);                     
             }
             //console.log($(this).index());
              $(this).attr('tabindex',$(this).index());                   
@@ -350,15 +346,12 @@
             if(attr<=1){
               works.children('div').removeClass(clasName);
               works.children('#img4').addClass(clasName);
-              //alert('d');
-              //$(this).parent().next().addClass(clasName);
+             
             }
              if(attr=4){
               $(this).removeClass();
               $(this).parent().prev().addClass('ui-page ui-body-c ui-page-active');              
-            }
-           // $(this).parent().prev().children('div').css('dispaly','block');
-            //$(this).parent().prev().children('div').siblings().css('dispaly','none');
+            }          
           })
 
         })
