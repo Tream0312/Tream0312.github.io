@@ -269,13 +269,13 @@
             </ol>																										
         </section>
         <script>
-			var ahover = $('.contactme a');
-			$('.contactme a').on({
-				mouseenter:function(){
-				console.log($(this));
-				$(this).children().css({'display':'block'}).parents('li').css('background','#e23a6e').siblings().css('background','#555').children().children().css('display','none');
-				
-			})
+			
+				var ahover = $('.contactme a');
+				$('.contactme a').on({
+				mouseenter:function(){			
+				$(this).children().css({'display':'block'}).parents('li').css('background','#e23a6e').siblings().css('background','#555').children().children().css('display','none');		
+				}
+				})
 		</script>
     </div>
     </div>
