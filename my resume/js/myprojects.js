@@ -3,8 +3,8 @@
 				var aRight = document.getElementById('projectimg').children[1];
 				//获取列表
 				var lists = document.getElementById('projectlist').children;
-				console.log(aLeft);
-				console.log(aRight);
+				//console.log(aLeft);
+				//console.log(aRight);
 				//改变list样式
 				function allChange (){
 					for(var i = 0;i<lists.length;i++){

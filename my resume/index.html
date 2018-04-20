@@ -9,15 +9,15 @@
 		<meta name="author" content="Tream">
 		<link rel="shortcut icon" href="img/resume.ico">
 		<title>Tream's Resume</title>
-    	<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet" type="text/css"/>
-    	<link href='http://at.alicdn.com/t/font_607551_pjwpmzp7o8ddkj4i.css' rel="stylesheet" type="text/css"/>
+    	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet" type="text/css"/>
+    	<link href='https://at.alicdn.com/t/font_607551_pjwpmzp7o8ddkj4i.css' rel="stylesheet" type="text/css"/>
     	<link href="css/scroll.css" rel="stylesheet"/>
     	<link href="css/projects.css" rel="stylesheet"/>
     	<link href="css/skills.css" rel="stylesheet"/>	
     	<!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">-->
     	<link href="css/bootstrap.min.css" rel="stylesheet"/>	
-	   <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-	  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	   <script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
     	<!--
         	作者：offline
         	时间：2018-03-23
@@ -99,15 +99,15 @@
             	var myAudioStyle = document.getElementById('music');
             	var myAudio = document.getElementsByTagName('audio')[0];				
       			 //当点击头像时，控制音乐播放
-				 console.log(myAudio.paused);
+				 //console.log(myAudio.paused);
       			myAudioStyle.onclick= function playPause() {      			 			
       			 if (myAudio.paused){	
-					console.log('ok');
+					//console.log('ok');
       			 	myAudioStyle.className = 'bfchange';      			 	
           			 myAudio.play();	 
       			 }
       			 else{
-				 console.log('no');
+				 //console.log('no');
       			 	myAudioStyle.className = 'ztchange';
           			myAudio.pause();
       			 }
@@ -186,7 +186,7 @@
 			</div>
 		<script>
 			var ps = document.getElementById('project').children;			
-			console.log(ps.length);
+			//console.log(ps.length);
 			for(var i =0;i<ps.length-1;i++) {
 				//当鼠标放到对应元素上时，将对应元素的TITLE属性值给P6
 				ps[i].onmouseenter = function (){
