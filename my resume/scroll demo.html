@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="description" content="巴晓来的web前端个人简历，心之所向金石为开。">
+		<meta name="keywords" content="web前端，Tream，web前端个人简历，前端开发简历网站，Tream的简历，前端工程师简历,web前端开发, web前端培训, web前端工程师">
+		<meta name="author" content="Tream">
+		<link rel="shortcut icon" href="img/resume.ico">
+		<title>Tream's Resume</title>
+    	<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet" type="text/css"/>
+    	<link href='http://at.alicdn.com/t/font_607551_pjwpmzp7o8ddkj4i.css' rel="stylesheet" type="text/css"/>
+    	<link href="css/scroll.css" rel="stylesheet"/>
+    	<link href="css/projects.css" rel="stylesheet"/>
+    	<link href="css/skills.css" rel="stylesheet"/>	
+    	<!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    	<link href="css/bootstrap.min.css" rel="stylesheet"/>	
+	   <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	<!--
+        	作者：offline
+        	时间：2018-03-23
+        	描述：
+        	<script type="text/javascript" src="js/myprojects.js"></script>
+       	<link href="css/bootstrap.min.css" />  	
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	oncontextmenu = 'return false'
+    	 -->
+		 <style>
+			#music{
+			width:20px;
+			height:20px;
+			position:fixed;
+			z-index:1;
+			margin:10px;
+			transition:all 3s ease;			
+			}
+			#music img{
+			display:inline-block;
+			width:50px;
+			height:50px;
+			border-radius:50%;			
+			z-index:1;
+			top:5px;
+			left:5px;
+			animation:rate 5s infinite linear;
+			}
+			@keyframes rate
+				{
+					from {transform:rotate(0deg);}
+					to {transform:rotate(360deg);}
+				}
+
+		.ztchange::before{
+			content:'';
+			display:inline-block;
+			position:absolute;
+			z-index:11;
+			top:10px;
+			left:20px;
+			width: 0px;
+			height: 0px;
+			border-top: 15px solid transparent;
+			border-left: 13px solid rgba(222,0,0,0.5)!important;
+			border-bottom: 15px solid transparent;
+			background-color: rgba(222,0,0,0)!important;
+			box-shadow: 15px 0px 0px 0px rgba(222,0,0,0)!important;								
+		}
+		.bfchange::before{
+			content:'';
+			display:inline-block;
+			position:absolute;
+			z-index:11;
+			top:10px;
+			left:20px;
+			left:15px;
+			width: 0px;
+			height:26px;
+			border-left: 5px solid rgba(222,0,0,0)!important;
+			background-color: rgba(222,0,0,0.5)!important;
+			box-shadow: 15px 0px 0px 0px rgba(222,0,0,0.5)!important;					
+		}
+		 </style>
+</head>
+<body style='cursor:pointer !important;' onselectstart = 'return false';> 
+<iframe src='./moblie resume/index.html' width="100%"></iframe>
+<audio src="files/remix.mp3" autoplay="autoplay">Your browser does not support the audio element.</audio>
+<div id='music' class='bfchange'>
+	<img src='./img/mm.jpg'>
+</div>
+ <!--
+            	作者：743479880@qq.com
+            	时间：2018-03-12
+            	描述：控制音乐播放
+            -->
+            <script type="text/javascript">
+            	var myAudioStyle = document.getElementById('music');
+            	var myAudio = document.getElementsByTagName('audio')[0];				
+      			 //当点击头像时，控制音乐播放
+				 console.log(myAudio.paused);
+      			myAudioStyle.onclick= function playPause() {      			 			
+      			 if (myAudio.paused){	
+					console.log('ok');
+      			 	myAudioStyle.className = 'bfchange';      			 	
+          			 myAudio.play();	 
+      			 }
+      			 else{
+				 console.log('no');
+      			 	myAudioStyle.className = 'ztchange';
+          			myAudio.pause();
+      			 }
+      		 }    
+      			//当鼠标移动时
+				myAudioStyle.onmouseleave = function(){
+					myAudioStyle.className = '';
+				}
+				myAudioStyle.onmouseenter = function(){
+					if (myAudio.paused){						
+      			 	myAudioStyle.className = 'ztchange';      			 	          			 	 
+      			 }
+      			 else{				 
+      			 	myAudioStyle.className = 'bfchange';         			
+      			 }
+				}
+            	
+    </script>
+<script>
+	$(document).ready(function(){
+		var h = $(window).height();
+		$('iframe').attr('height',h);
+	})
+</script>
+    <div class="nav">    
+	        <input type="radio" name="radio-set" checked id="nav1" style="width: 17%;">
+	        <a href="#panel1" style="width: 17%;" class="nav-pc">HOME</a>
+	        <input type="radio" name="radio-set" id="nav2">
+	        <a href="#panel2" class="nav-pc">MYSELF</a>
+	        <input type="radio" name="radio-set" id="nav3">
+	        <a href="#panel3" class="nav-pc">SKILLS</a>
+	        <input type="radio" name="radio-set" id="nav4">
+	        <a href="#panel4" class="nav-pc">JOBS</a>
+	        <input type="radio" name="radio-set" id="nav5">
+	        <a href="#panel5" class="nav-pc">PROJECTS</a>
+	         <input type="radio" name="radio-set" id="nav6" style="width: 17%;">
+	        <a href="#panel6" style="width: 17%;" class="nav-pc">CONTACT</a>	
+    <div class="scroll">
+        <section class="home panel" id="panel1">        	
+            <div class="icon" data-icon="A"></div>
+            <div id="isme">
+            	<h1 style="margin-bottom: 0;">Hello I'm Tream</h1>
+            	<sub>WEB前端工作者</sub>
+            	<p class="me"><b style="font-size: 2rem;">我叫巴晓来</b></p>
+				<p class="email" style="font-size: 1.5rem;color: #AC2925;">qq邮箱：743479880@qq.com</p>
+				<p class="telephone" style="font-size: 1.5rem;color: #AC2925;">联系我：15170849870（江西吉安）</p>
+				<p class="say" style="font-size: 1.8rem;">The heart is open to the heart.</p>
+			</div>
+        </section>
+        <section class="panel panelColor" id="panel2">
+            <div class="icon" data-icon="B"></div>
+            <h1 style="width: 180px;margin:12.8rem auto 0px;" ><img src="img/me.jpg" style="width: 150px;height: 150px;border-radius: 50%;"></h1>         
+            <p style="width: 50%;margin:40px auto 0px;color: #fff;font-size: 1.5rem;font-weight: 600;line-height: 2rem;text-align: justify;text-indent:2em;">
+             您好，我叫巴晓来，23岁，坐标广州。 我并不是计算机专业,但对前端很感兴趣，所以自学前端，          	
+             今后的职业规划是朝着全栈发展，目前在学vuejs、AnjularJs。在一个朋友的工作室做过六个月的前端,本人在公司主要负责整个页面的前端开发，配合他实现产品前端界面效果与功能。写过响应式页面，移动端页面，pc端页面。
+             小的来说，商城，企业网站，评论等都有涉及。在此很感谢TCP网络工作室给我提供平台，让我学到了很多东西。                                                            
+         </p>
+        </section>
+        <section class="panel" id="panel3">
+            <div class="icon" data-icon="C"></div>
+            <div id="tit">
+            	<h1>Skills</h1>
+            	<p>HTML</p>
+            	<p>Nodejs</p>
+            	<p>CSS</p>
+            	<p>JavaScript</p>
+            	<p>WebPack</p>
+            </div>
+            <div id='project'>
+				<p class="p1" title="90%">HTML</p>							
+				<p class='p2' title="30%">Nodejs</p>
+				<p class="p3" title="80%">CSS</p>
+				<p class="p4" title="70%">JavaScript</p>			
+				<p class="p5" title="73%">WebPack</p>
+				<p class="p6" title="">Skills</p>
+			</div>
+		<script>
+			var ps = document.getElementById('project').children;			
+			console.log(ps.length);
+			for(var i =0;i<ps.length-1;i++) {
+				//当鼠标放到对应元素上时，将对应元素的TITLE属性值给P6
+				ps[i].onmouseenter = function (){
+					//获得对应元素属性值
+					var tit = this.getAttribute('title');
+					//把获取 的属性值给P6
+					ps[ps.length-1].setAttribute('title',tit);
+					ps[ps.length-1].innerText = this.innerText;
+					this.style.opacity = '0.7';					
+				}
+				//当鼠标移开时，P6上title属性值重置
+				ps[i].onmouseout = function (){
+					ps[ps.length-1].setAttribute('title',"");
+					ps[ps.length-1].innerText = 'Skills';
+					this.style.opacity = '1';
+					
+				}
+			}
+		</script>
+        </section>
+        <section class="panel panelColor" id="panel4">
+            <div class="icon" data-icon="D"></div>
+            <h2>my jobs</h2>
+            <div class="job-nav">         		      
+	            <p>  
+	            	<span>2016－7月</span>
+	            	在朋友的TP工作室做前端工，工作内容：切图，网站框架设计，用户交互设计等。
+	            </p>          	
+            	
+            	<p>
+            		<span>2016－6月</span>
+            		毕业于江西农业职业工程学院
+            	</p>           	
+           	
+            	<p>
+            		<span>2015－12月</span>
+            		自学前端，当初看了很多书：&lt;&lt;JavaScript权威指南&gt;&gt;;&lt;&lt;精通CSS&gt;&gt;;
+            		&lt;&lt;HTTP权威指南&gt;&gt;
+            		&lt;&lt;HTTP权威指南&gt;&gt;；在W3C教程网站，菜鸟教程等平台上学习。           		
+            	</p>           	
+            </div>
+        </section>     
+        <section class="panel" id="panel5">
+            <div class="icon" data-icon="E"></div>
+            <h2>my projects</h2>           
+	            <p id='projectimg'>
+					<a href="https://tream0312.github.io/xiaomi/" target="_blank"></a>
+					<a href="https://tream0312.github.io/yanda/" target="_blank"></a>		
+				</p>
+	            <ul id="projectlist">
+	            	<li class="current">1</li>
+	            	<li>2</li>
+	            	<li>3</li>
+	            </ul> 
+	            <script type="text/javascript" src="js/myprojects.js"></script>
+        </section>
+		<section class="panel" id="panel6">
+            <div class="icon" data-icon="F"></div>
+            <h2>CONTACT FOR ME</h2>
+            <dl>
+            	<dt>灵感</dt>
+            	<dt>代码</dt>
+            	<dt>梦想</dt>
+            	<dt>未来</dt>
+            </dl>
+            <p class="endsay">
+            	学习是一个充实愉悦的过程<br/>
+				喜欢尝试，期待新鲜事物<br/>
+				前端即兴趣，兴趣即未来<br/>
+				行路有良友，便是捷径<br/>
+				期待有机会与您共事！<br/>
+            </p>
+            <ol class="contactme">
+            	<li><a href="https://github.com/Tream0312" class="iconfont icon-github" title="github"><span>github</span></a></li>
+            	<li><a href="" class="iconfont icon-aui-icon-weichat" title="weichat"><span></span></a></li>
+            	<li><a href="" class="iconfont icon-qq" title="QQ"><span></span></a></li>
+            	<li><a href="" class="iconfont icon-youxiang1"><span>tream0312@163.com</span></a></li>
+            	<li><a href="" class="iconfont icon-xinlang"><span>Weibo</span></a></li>
+            	<li><a href="" class="iconfont icon-zhihu"><span>Zhifu</span></a></li>
+            </ol>																										
+        </section>
+        <script src="js/contact.js"></script>
+    </div>
+    </div>
+<script>
+    window.onload= function () {
+        var scroll=document.getElementsByClassName("scroll")[0];//ie不兼容，换成id会成功
+        var panel=document.getElementsByClassName("panel");//ie不兼容，换成id会成功
+        var clientH=window.innerHeight;
+        scroll.style.height=clientH+"px";
+        for(var i=0;i<panel.length;i++){
+            panel[i].style.height=clientH+"px";
+        }
+        /*下面是关于鼠标滚动*/
+        var inputC=document.getElementsByTagName("input");
+        var wheel= function (event) {
+            var delta=0;
+            if(!event)//for ie
+                event=window.event;
+            if(event.wheelDelta){//ie,opera
+                delta=event.wheelDelta/120;
+            }else if(event.detail){
+                delta=-event.detail/3;
+            }
+            if(delta){
+                handle(delta,inputC);
+            }
+            if(event.preventDefault)
+                event.preventDefault();
+            event.returnValue=false;
+        };
+        if(window.addEventListener){
+            window.addEventListener('DOMMouseScroll',wheel,false);
+        }
+        window.onmousewheel=wheel;
+    };
+    function handle(delta,arr) {
+        var num;
+        for(var i=0;i<arr.length;i++){//得到当前checked元素的下标
+            if(arr[i].checked){
+                num=i;
+            }
+        }
+        if(delta>0 && num>0){//向上滚动
+            num--;
+            arr[num].checked=true;
+        }else if(delta<0 && num<5){//向下滚动
+            num++;
+            arr[num].checked=true;
+        }
+    }
+   
+   
+            	
+            	
+            
+</script>
+</body>
+</html>
