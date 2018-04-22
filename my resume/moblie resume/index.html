@@ -213,13 +213,13 @@
         }
 		.navbar-toggle{
 		    width:44px;
-			height:34px;
+			height:55px;
 		}
 		.navbar-header .icon-left{
 			display:inline-block;
 			margin:auto;
 			width:25px;
-			height:3px;
+			height:4px;
 			background:#fff;
 			border-radius:2px;
 			transform:rotate(-40deg);
@@ -229,7 +229,7 @@
 			display:inline-block;
 			margin:auto;
 			width:25px;
-			height:3px;
+			height:4px;
 			background:	#fff;
 			border-radius:2px;
 			transform:rotate(40deg);
@@ -304,10 +304,6 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
 			   <span class="icon-bar"></span>
-			  <!--           
-			  <span class='icon-left'></span>
-			   <span class='icon-right'></span>
-			   -->
             </button>
           </div>
           <div class="collapse navbar-collapse" id="example-navbar-collapse">
@@ -322,25 +318,31 @@
           </div>
       </nav>​
 	  <script>
-	  var str1 = "<span class='icon-left'></span><span class='icon-right'></span>";
-	  var str2 = "<span class='icon-bar'></span><span class='icon-bar'></span><span class='icon-bar'></span>";
-		$('.navbar-toggle').on('click',function(){			
+	  var str1 = "<span class='icon-left' onclick='return false;'></span><span class='icon-right' onclick='return false;'></span>";
+	  var str2 = "<span class='icon-bar' onclick='return false;'></span><span class='icon-bar' onclick='return false;'></span><span class='icon-bar' onclick='return false;'></span>";	  
+	  var collapse = $('#example-navbar-collapse');
+	  var toggle = $('.navbar-toggle');
+		toggle.on('click',function(e){
+			e.preventDefault();
+			$(this).children().onclick = function(e){
+				e.preventDefault();
+				return false;
+			}
+			//console.log($(this).children());
 			if($(this).hasClass('active')){
 				//console.log('ok');
 				$('.icon-bar').remove();
 				$(this).append(str1);
 				$(this).removeClass('active');
-				$('.collapse').css('display','block');
+				collapse.slideDown();
 			}else{
 				$(this).append(str2);
 				$('.icon-left').remove();
 				$('.icon-right').remove();
-				$('.collapse').css('display','none');				
-				//$('#example-navbar-collapse').css('display','none'+'!important');
-				$(this).addClass('active');	
-								
+				$(this).addClass('active collapsed');
+				collapse.slideUp();				
 			}
-		})
+		})	
 	  </script>
     <!--首页-->
     <div class="mb-shouye" id='home'>
